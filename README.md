@@ -2,12 +2,17 @@
 A machine learning classification project that predicts customer churn using behavioral and demographic data to support retention strategies.
 
 ## Table of Contents
+
 - [Project Objective](#project-objective)
+- [Introduction](#introduction)
+- [Dataset Overview](#dataset-overview)
 - [Project Structure](#project-structure)
+- [Model Performance Comparison](#model-performance-comparison)
 - [Tools and Techniques Utilized](#tools-and-techniques-utilized)
 - [Results and Recommendations](#results-and-recommendations)
 - [What I Have Learned From This Project](#what-i-have-learned-from-this-project)
 - [How to Use This Repository](#how-to-use-this-repository)
+
 
 ---
 
@@ -30,6 +35,12 @@ In this project, we build a classification model to predict whether a customer w
 
 The dataset contains information on 10,000 bank customers, including demographic details, account information, and activity metrics.
 
+## Tech Stack
+
+- **Languages:** Python  
+- **Libraries:** pandas, NumPy, scikit-learn, matplotlib, seaborn  
+- **Tools:** Jupyter Notebook  
+- **Techniques:** Classification, Feature Engineering, Model Evaluation, Class Imbalance Handling  
 **Target Variable:**
 - `Exited` (1 = customer left, 0 = customer stayed)
 
