@@ -1,4 +1,4 @@
-# Intro to Machine Learning: Classification Project
+# customer-churn-prediction-beta-bank
 
 ## Table of Contents
 - [Project Objective](#project-objective)
