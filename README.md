@@ -1,4 +1,5 @@
 # Customer Churn Prediction (Beta Bank)
+A machine learning classification project that predicts customer churn using behavioral and demographic data to support retention strategies.
 
 ## Table of Contents
 - [Project Objective](#project-objective)
