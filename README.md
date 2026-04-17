@@ -11,8 +11,35 @@
 ---
 
 ## Project Objective
+The goal of this project is to develop a machine learning model that predicts customer churn for Beta Bank. By analyzing historical customer behavior and account data, the model identifies customers who are likely to leave the bank.
 
-The goal of this project is to apply supervised machine learning to a real-world dataset and build a binary classification model. Using historical user behavior data, the model predicts whether a user will perform a target action, helping the business make data-driven decisions and prioritize actions.
+This enables the business to take proactive retention actions, reduce customer attrition, and improve long term revenue.
+
+---
+
+## Introduction
+Beta Bank is experiencing customer attrition, leading to revenue loss. Retaining existing customers is significantly more cost effective than acquiring new ones, making churn prediction a critical business problem.
+
+In this project, we build a classification model to predict whether a customer will leave the bank based on demographic and behavioral features. The goal is to support data driven retention strategies by identifying high risk customers early.
+
+
+---
+
+## Dataset Overview
+
+The dataset contains information on 10,000 bank customers, including demographic details, account information, and activity metrics.
+
+**Target Variable:**
+- `Exited` (1 = customer left, 0 = customer stayed)
+
+The dataset includes features such as:
+- Credit Score
+- Geography
+- Age
+- Tenure
+- Balance
+- Number of Products
+- Estimated Salary
 
 ---
 
@@ -32,13 +59,29 @@ The project consists of the following main steps:
 3. **Model Training and Evaluation**
    - Trained several baseline models (e.g., Logistic Regression, Decision Tree, Random Forest).
    - Evaluated performance using accuracy, ROC-AUC, and confusion matrix.
-   - Compared results and selected the best-performing model.
+   - Compared results and selected the best performing model.
 
 4. **Interpretation and Business Impact**
    - Analyzed which features were most important to the model.
    - Translated model performance into practical business implications.
 
 ---
+
+## Model Performance Comparison
+
+Several models were trained and evaluated to identify the best performing approach:
+
+- **Logistic Regression**
+  - F1 Score: ~0.51
+  - ROC-AUC: ~0.72
+  - Struggled with class imbalance and recall for churned customers
+
+- **Random Forest Classifier**
+  - F1 Score: ~0.58–0.62
+  - ROC-AUC: ~0.86
+  - Better captured nonlinear relationships and improved recall
+
+The Random Forest model was selected as the final model due to its superior performance across both F1-score and ROC-AUC metrics.
 
 ## Tools and Techniques Utilized
 
@@ -59,19 +102,25 @@ The project consists of the following main steps:
 
 ## Results and Recommendations
 
-- Built a supervised learning model with solid predictive performance on the test set.
-- Identified key behavioral features that most strongly influence the predicted outcome.
-- Demonstrated how classification models can support decisions such as:
-  - Prioritizing high-value or high-risk users
-  - Targeting users with tailored campaigns
-  - Automating parts of the decision-making process
+- Developed a machine learning model capable of predicting customer churn with strong performance.
+- **Final Model (Random Forest):**
+  - F1 Score: **0.619**
+  - ROC-AUC: **0.864**
+- Addressing class imbalance using upsampling and class weighting significantly improved model performance.
+- The model demonstrates strong ability to distinguish between customers who will leave and those who will stay.
 
-**Recommendations:**
+### Business Impact
 
-- Use the trained model as a decision-support tool to rank or segment users.
-- Collect additional features (e.g., more detailed behavioral or demographic data) to further improve model performance.
-- Continue experimenting with advanced models (e.g., Gradient Boosting, tuned Random Forest) and hyperparameter optimization.
+This model can support business decisions such as:
+- Identifying high risk customers before they churn
+- Targeting retention campaigns more effectively
+- Reducing customer acquisition costs by focusing on retention
 
+### Recommendations
+
+- Deploy the model as a decision support tool for customer retention teams
+- Incorporate additional behavioral features (e.g., transaction history) to improve predictions
+- Continue optimizing models using hyperparameter tuning or advanced algorithms (e.g., Gradient Boosting)
 ---
 
 ## What I Have Learned From This Project
@@ -85,7 +134,7 @@ The project consists of the following main steps:
 
 ## How to Use This Repository
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/ContrerasJJ/intro-to-machine-learning-project.git
-   cd intro-to-machine-learning-project
+1. **Clone the repository**
+```bash
+git clone https://github.com/ContrerasJJ/customer-churn-prediction-beta-bank.git
+cd customer-churn-prediction-beta-bank
