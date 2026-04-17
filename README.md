@@ -121,7 +121,8 @@ The Random Forest model provided the best balance between precision and recall, 
   - ROC-AUC: **0.864**
 - Addressing class imbalance using upsampling and class weighting significantly improved model performance.
 - The model demonstrates strong ability to distinguish between customers who will leave and those who will stay.
-
+- Successfully exceeded the project performance threshold (F1 ≥ 0.59)
+  
 ### Business Impact
 
 This model can support business decisions such as:
@@ -138,7 +139,7 @@ This model can support business decisions such as:
 
 ## What I Have Learned From This Project
 
-- How to structure a complete supervised learning pipeline from raw data to model evaluation.
+- Built an end-to-end machine learning pipeline from raw data preprocessing to final model evaluation.
 - The importance of data preprocessing and feature quality on model performance.
 - How to interpret classification metrics and connect them to real business decisions.
 - Practical experience in using scikit-learn for model training, evaluation, and comparison.
