@@ -1,4 +1,4 @@
-# Customer-Churn-Prediction-Beta-Bank
+# Customer Churn Prediction (Beta Bank)
 
 ## Table of Contents
 - [Project Objective](#project-objective)
