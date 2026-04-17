@@ -94,6 +94,7 @@ Several models were trained and evaluated to identify the best performing approa
   - Better captured nonlinear relationships and improved recall
 
 The Random Forest model was selected as the final model due to its superior performance across both F1-score and ROC-AUC metrics.
+The Random Forest model provided the best balance between precision and recall, making it the most effective choice for identifying potential churn customers.
 
 ## Tools and Techniques Utilized
 
